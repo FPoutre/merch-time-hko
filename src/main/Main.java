@@ -39,7 +39,7 @@ public class Main {
         for (int n : our_items) our_amount += n;
         for (int n : bobs_items) bobs_amount += n;
 
-        return our_amount > bobs_amount;
+        return our_amount > bobs_amount && our_amount == amountToSpend;
     }
 
     public static ArrayList<Integer> greedy(ArrayList<Integer> items, int amountToSpend) {
